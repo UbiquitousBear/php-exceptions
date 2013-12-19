@@ -2,7 +2,4 @@
 
 namespace Litipk\Exceptions;
 
-final class NotImplementedException extends \LogicException
-{
-
-}
+final class NotImplementedException extends \LogicException {}
