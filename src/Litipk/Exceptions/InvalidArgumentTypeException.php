@@ -28,8 +28,10 @@ final class InvalidArgumentTypeException extends \InvalidArgumentException
 	 */
 	public function __construct (array $expected_types, $given_type, $message = "", $code = 0, Exception $previous = null)
 	{
+		parent::__construct($message, $code, $previous);
+
 		if ($expected_types === null || empty($expected_types) || $given_type === null || !is_string($given_type)) {
-			throw new \LogicException();
+			throw new \LogicException("InvalidArgumentTypeException requires valid \$expected_types and \$given_type parameters.");
 		}
 
 		if (in_array($given_type, $expected_types)) {
