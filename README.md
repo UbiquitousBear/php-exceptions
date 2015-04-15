@@ -8,3 +8,4 @@ It provides the following exception classes:
 * NotImplementedException
 * DeprecatedException
 * InvalidArgumentTypeException
+* InvalidCastException

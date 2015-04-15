@@ -17,9 +17,7 @@
 	"require": {
 		"php": ">=5.3.0"
 	},
-	"require-dev": {
-		
-	},
+	"require-dev": {},
 	"minimum-stability": "stable",
 	"autoload": {
 		"psr-4": {
